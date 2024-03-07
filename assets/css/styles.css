@@ -5,6 +5,7 @@ html {
   padding: 0;
   font-family: Arial, sans-serif;
   background: linear-gradient(to right, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3);
+  animation: rainbow 20s linear infinite;
 }
 
 /* Global styles */
@@ -52,4 +53,14 @@ footer {
   color: #fff;
   text-align: center;
   padding: 20px 0;
+}
+
+/* Rainbow animation */
+@keyframes rainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
 }
